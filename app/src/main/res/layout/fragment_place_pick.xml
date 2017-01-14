@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:orientation="vertical"
+    tools:context="com.placepickexample.Fragments.PlacePickFrag">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/confirm"
+    android:layout_alignParentTop="true"
+    android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_margin"
+            android:text="Enable GPS"
+            android:layout_gravity="center"
+            android:id="@+id/switch1"
+            android:textSize="18sp"
+            android:checked="false"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/small_margin"
+
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pick_place"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@drawable/buttonround1"
+            android:text="Pick a Place"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_place"
+            android:gravity="center"
+            android:textColor="@color/textColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/small_margin"
+
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonround1"
+                android:id="@+id/pick_date"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:text="Choose a date"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_date"
+                android:gravity="center"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/small_margin"
+
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonround1"
+                android:layout_gravity="center"
+                android:id="@+id/pick_time"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:text="Choose a time"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_time"
+                android:gravity="center"
+                android:textColor="@color/textColor"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:text="Reminder"
+                android:id="@+id/chkReminder"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm"
+                android:layout_gravity="center"
+                android:id="@+id/chkAlarm"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add a note.."
+                android:id="@+id/etNote"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/confirm"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm"/>
+
+
+
+</RelativeLayout>

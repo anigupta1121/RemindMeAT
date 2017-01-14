@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "911475072933",
+    "firebase_url": "https://remindmeat-5e359.firebaseio.com",
+    "project_id": "remindmeat-5e359",
+    "storage_bucket": "remindmeat-5e359.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911475072933:android:98fb6bef293871ea",
+        "android_client_info": {
+          "package_name": "com.placepickexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911475072933-8i7k56741am7jgk32k3v19ih85mpvfo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyHjx0Ysh-Gbbr2w_67v0ClgW7XzSDpyI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
