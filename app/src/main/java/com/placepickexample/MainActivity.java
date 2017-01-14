@@ -32,7 +32,6 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
 
     FragmentManager manager;
-
     public static TextView loc;
     public static Toolbar toolbar;
     @Override
